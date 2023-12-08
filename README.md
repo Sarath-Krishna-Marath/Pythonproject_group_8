@@ -11,3 +11,11 @@ Reenu Tresa Manuel
 ID:- 0850596
 Puneetpal Singh Bhatti
 ID:- 0836746
+# About data variables
+
+Age	This column represents the age of each employee in years.
+Gender	This column contains the gender of each employee, which can be either male or female.	
+Education Level	This column contains the educational level of each employee, which can be high school, bachelor's degree, master's degree, or PhD.	
+Job Title	This column contains the job title of each employee. The job titles can vary depending on the company and may include positions such as manager, analyst, engineer, or administrator.	
+Years of Experience	This column represents the number of years of work experience of each employee.	
+Salary	This column represents the annual salary of each employee in US dollars.
