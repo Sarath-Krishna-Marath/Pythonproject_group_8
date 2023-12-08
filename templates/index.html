@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Salary Packages</title>
+
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- //google-fonts -->
+
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="static/assets/css/style-liberty.css">
+
+</head>
+
+<body>
+
+
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand" href="{{ url_for('index') }}">
+                        <i class=""></i> Salary Packages
+                    </a>
+                </h1>
+            
+                <button class="navbar-toggler collapsed bg-gradient" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-lg-auto align-items-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('services') }}">Data Description</a>
+                        </li>
+
+                        
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!-- banner section -->
+    <section id="home" class="w3l-banner pt-5">
+        <div class="container pt-lg-5 pt-md-4">
+            <div class="row pt-lg-5 pt-4">
+                <div class="col-lg-7 banner-info-grid pt-lg-0 pt-5">
+                    <h1 class="mb-3">Top Paying Jobs</h1>
+                    <h3 class="mb-4"> <span class="typed-text"></span><span class="cursor">&nbsp</span> </h3>
+                    <p></p>
+                    
+                </div>
+                <div class="col-lg-5 text-lg-end my-image mt-lg-0 mt-4">
+                    <img src="static/assets/images/Banner11.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner section -->
+
+
+
+     <!-- Services Section -->
+     <section class="about-section py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
+                <h3 class="w3l-title-main">Description of Salary Packages</h3>
+            </div>
+            <div class="row justify-content-center">
+               
+                <table class="table">
+                    <tr class="table__header"> 
+                        <tr>
+                            <th>Variables</th>
+                            <th>Description</th>
+                            <th>Datatype</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Age</td>
+                            <td>This column represents the age of each employee in years.</td>
+                            <td>Integer</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>This column contains the gender of each employee, which can be either male or female.</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td>Education Level</td>
+                            <td>This column contains the educational level of each employee, which can be high school, bachelor's degree, master's degree, or PhD.</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td>Job Title</td>
+                            <td>This column contains the job title of each employee. The job titles can vary depending on the company and may include positions such as manager, analyst, engineer, or administrator.</td>
+                            <td>String</td>
+                        </tr>
+                        <tr>
+                            <td>Years of Experience</td>
+                            <td>This column represents the number of years of work experience of each employee.</td>
+                            <td>Integer</td>
+                        </tr>
+                        <tr>
+                            <td>Salary</td>
+                            <td> This column represents the annual salary of each employee in US dollars.</td>
+                            <td>Integer</td>
+                        </tr>
+                  
+               </table> 
+                </div>
+            
+
+            <div class="w3l-btn text-center">
+                <a href="{{ url_for('services') }}" class="btn btn-border mt-lg-5 mt-4 me-2">
+                    Data Description <span class="fas fa-long-arrow-alt-right"></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- //Services Section -->
+
+
+
+
+
+
+     <!-- footer -->
+     <footer class="text-center">
+        <div class="footer py-5">
+            <div class="container py-md-4">
+                <div clss="footer-logo">
+                    <a class="logo" href="{{ url_for('index') }}">
+                        <i class=""></i> DAB111
+                    </a>
+                </div>
+                <div class="footer-contact-info mt-4">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="row footer-grids">
+                <div class="col-lg-6 copyright text-lg-start text-center align-center">
+                    <p>Python Project.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end text-center mt-lg-0 mt-4">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Salary data Website</title>
+        <link rel="stylesheet" href="/static/style.css" />
+    </head>
+    <body>
+        <h1 class="text__header">Salary Data</h1>
+        <table class="table">
+            <tr class="table__header"> 
+             <th class="table__cell">Age</th>
+             <th class="table__cell">Gender</th> 
+             <th class="table__cell">Education Level</th> 
+             <th class="table__cell">Job Title</th> 
+             <th class="table__cell">Years of Experience</th> 
+             <th class="table__cell">Salary</th>
+            </tr>
+           <ul>
+            
+             {% for row in Salary %}
+                <tr class="table__row">
+                {% for cell in row %}
+                <td class="table__cell">{{cell}} </td>
+                {% endfor %}
+                </tr> 
+             {% endfor %}
+            
+           </ul>
+        <table>
+    </body>
+</html>
+

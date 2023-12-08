@@ -1,0 +1,27 @@
+  
+.table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 1rem;
+    background-color: rgb(169, 206, 169);
+}
+
+.table__row:nth-child(even) {
+    background-color: rgb(147, 220, 175);
+}
+
+.table__header {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.table__cell{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.text__header {
+    margin-left:340px;
+    text-align: left ;
+  }
+
